@@ -6,6 +6,7 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
   afterBody: [
+    Component.RecentNotesForIndex(),
     Component.Comments({
       provider: 'giscus',
       options: {
@@ -34,7 +35,6 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
-    Component.RecentNotesForIndex(),
   ],
   left: [
     Component.PageTitle(),
