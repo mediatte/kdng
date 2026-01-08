@@ -1,4 +1,9 @@
-[[지금은 소피스트 시대]]
 
 
+
+
+
+
+## KDNG
+Knowledge Distribution Network for Growth
 
