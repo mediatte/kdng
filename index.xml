@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Quartz 4</title>
+      <link>https://quartz.jzhao.xyz</link>
+      <description>Last 10 notes on Quartz 4</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>index</title>
+    <link>https://quartz.jzhao.xyz/</link>
+    <guid>https://quartz.jzhao.xyz/</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Thu, 08 Jan 2026 10:04:48 GMT</pubDate>
+  </item><item>
+    <title>이 페이지는 KDNG의 랜딩 페이지입니다</title>
+    <link>https://quartz.jzhao.xyz/%EC%9D%B4-%ED%8E%98%EC%9D%B4%EC%A7%80%EB%8A%94-KDNG%EC%9D%98-%EB%9E%9C%EB%94%A9-%ED%8E%98%EC%9D%B4%EC%A7%80%EC%9E%85%EB%8B%88%EB%8B%A4</link>
+    <guid>https://quartz.jzhao.xyz/%EC%9D%B4-%ED%8E%98%EC%9D%B4%EC%A7%80%EB%8A%94-KDNG%EC%9D%98-%EB%9E%9C%EB%94%A9-%ED%8E%98%EC%9D%B4%EC%A7%80%EC%9E%85%EB%8B%88%EB%8B%A4</guid>
+    <description><![CDATA[ 지금은 소피스트 시대. ]]></description>
+    <pubDate>Thu, 08 Jan 2026 10:02:05 GMT</pubDate>
+  </item><item>
+    <title>지금은 소피스트 시대</title>
+    <link>https://quartz.jzhao.xyz/%EC%A7%80%EA%B8%88%EC%9D%80-%EC%86%8C%ED%94%BC%EC%8A%A4%ED%8A%B8-%EC%8B%9C%EB%8C%80</link>
+    <guid>https://quartz.jzhao.xyz/%EC%A7%80%EA%B8%88%EC%9D%80-%EC%86%8C%ED%94%BC%EC%8A%A4%ED%8A%B8-%EC%8B%9C%EB%8C%80</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Thu, 08 Jan 2026 09:34:42 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
