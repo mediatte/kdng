@@ -5,7 +5,22 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [
+    Component.Comments({
+      provider: 'giscus',
+      options: {
+        repo: 'mediatte/kdng',
+        repoId: 'R_kgDOQ18U2A',
+        category: 'General',
+        categoryId: 'DIC_kwDOQ18U2M4C0uqS',
+        mapping: 'pathname',
+        strict: false,
+        reactionsEnabled: true,
+        inputPosition: 'bottom',
+        lang: 'ko',
+      }
+    }),
+  ],
   footer: Component.Footer(),
 }
 
@@ -19,6 +34,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
+    Component.RecentNotesForIndex(),
   ],
   left: [
     Component.PageTitle(),
