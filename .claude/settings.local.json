@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(npx quartz build:*)",
-      "Bash(lsof:*)"
+      "Bash(lsof:*)",
+      "Bash(echo:*)",
+      "Bash(ln:*)"
     ]
   }
 }

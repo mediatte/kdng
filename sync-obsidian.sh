@@ -1,6 +1,10 @@
 #!/bin/bash
 # Sync Obsidian vault to Quartz content folder and publish
 
+# Change to Quartz directory
+QUARTZ_DIR="/Users/jlee0724/PAGE/quartz"
+cd "$QUARTZ_DIR" || exit 1
+
 OBSIDIAN_PATH="/Users/jlee0724/obsidian/mediatte/KDNG"
 CONTENT_PATH="content"
 
