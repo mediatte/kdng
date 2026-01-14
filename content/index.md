@@ -13,4 +13,10 @@ Knowledge Distribution Network for Growth
 
 빠르게 바뀌어 가는 이 첨단 세상을 재밌게 항해했으면 좋겠습니다.
 
-2026. 01
+2026.01.
+
+
+
+![](https://mac-mini.tailea08c9.ts.net/api/assets/d1accd3c-146e-4b76-a4ee-e94b4545baf0/thumbnail?size=preview&key=ElWnbTSgecP6LzZzwo9NYw1SW-luyaycIhCvPyYomaaIxcNvb3V1P8dZl3cJ0DCqjDw)
+
+!!
