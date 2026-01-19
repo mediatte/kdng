@@ -17,6 +17,4 @@ Knowledge Distribution Network for Growth
 
 
 
-![](https://mac-mini.tailea08c9.ts.net/api/assets/d1accd3c-146e-4b76-a4ee-e94b4545baf0/thumbnail?size=preview&key=ElWnbTSgecP6LzZzwo9NYw1SW-luyaycIhCvPyYomaaIxcNvb3V1P8dZl3cJ0DCqjDw)
-
 !!
