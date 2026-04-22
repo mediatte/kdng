@@ -1,4 +1,3 @@
-
 ## 개요  
 Dify는 LLM(Large Language Model) 기반의 오픈소스 AI 플랫폼으로, 커스텀 AI 솔루션 구축을 위한 통합 개발 환경을 제공합니다.
 
@@ -10,7 +9,7 @@ Dify는 LLM(Large Language Model) 기반의 오픈소스 AI 플랫폼으로, 커
 - 핵심 기능:  
   - [[챗봇 개발]]  
   - [[API 통합]]  
-  - [[AI 에이전트]] 생성  
+  -  생성  
 - 지원 모델: [[LangChain]] | [[LangSmith]]
 
 ## 특징/구성요소  
