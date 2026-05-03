@@ -1,9 +1,12 @@
 #!/bin/bash
 set -e
 
+# Sync Obsidian vault to Quartz content folder and publish
+
 QUARTZ_DIR="/Users/jlee0724/PAGE/quartz"
 OBSIDIAN_PATH="/Users/jlee0724/obsidian/mediatte/KDNG"
 CONTENT_PATH="content"
+
 REMOTE_URL="https://github.com/mediatte/kdng.git"
 SOURCE_BRANCH="v4"
 DEPLOY_BRANCH="main"
@@ -17,29 +20,18 @@ cd "$QUARTZ_DIR" || {
 echo ""
 echo "🔍 Checking Git repository..."
 if [ ! -d ".git" ]; then
-  echo "❌ This is not a git repository: $QUARTZ_DIR"
+  echo "❌ Not a git repository: $QUARTZ_DIR"
   exit 1
 fi
 
 echo ""
-echo "🔐 Checking GitHub account/auth..."
+echo "🔐 Setting GitHub remote..."
 git remote set-url origin "$REMOTE_URL"
 git remote -v
 
 echo ""
-echo "🌿 Checking branch..."
-CURRENT_BRANCH=$(git branch --show-current)
-
-if [ "$CURRENT_BRANCH" != "$SOURCE_BRANCH" ]; then
-  echo "➡️ Switching to $SOURCE_BRANCH..."
-  git checkout "$SOURCE_BRANCH"
-fi
-
-echo ""
-echo "🔄 Pulling latest $SOURCE_BRANCH..."
-git pull --rebase origin "$SOURCE_BRANCH" || {
-  echo "⚠️ Pull failed. Continuing with local branch."
-}
+echo "🌿 Switching to $SOURCE_BRANCH..."
+git checkout "$SOURCE_BRANCH"
 
 echo ""
 echo "📦 Syncing Obsidian vault to Quartz content folder..."
@@ -83,17 +75,5 @@ echo "🚀 Pushing $SOURCE_BRANCH to $DEPLOY_BRANCH..."
 git push origin "$SOURCE_BRANCH:$DEPLOY_BRANCH" --force-with-lease
 
 echo ""
-echo "🔁 Triggering deploy with empty commit on $DEPLOY_BRANCH..."
-git checkout "$DEPLOY_BRANCH" || git checkout -b "$DEPLOY_BRANCH"
-git pull origin "$DEPLOY_BRANCH"
-
-git commit --allow-empty -m "Trigger deploy: $(date '+%Y-%m-%d %H:%M')"
-git push origin "$DEPLOY_BRANCH"
-
-echo ""
-echo "↩️ Returning to $SOURCE_BRANCH..."
-git checkout "$SOURCE_BRANCH"
-
-echo ""
-echo "✅ Done. Obsidian content, Quartz config, GitHub auth, v4, and main are synced."
+echo "✅ Done. Obsidian content, Quartz config, $SOURCE_BRANCH, and $DEPLOY_BRANCH are synced."
 echo "🌐 Check GitHub Actions / Pages after deployment finishes."
